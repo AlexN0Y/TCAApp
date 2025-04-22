@@ -6,12 +6,18 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 @main
 struct SkillsEnhancementApp: App {
+    
+    let store = Store(initialState: ContentFeature.State()) {
+        ContentFeature()
+    }
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(store: store)
         }
     }
 }

@@ -6,6 +6,14 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		DFEE08852DB7043A00A36623 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = DFEE08842DB7043A00A36623 /* ComposableArchitecture */; };
+		DFEE08882DB7045B00A36623 /* NonEmpty in Frameworks */ = {isa = PBXBuildFile; productRef = DFEE08872DB7045B00A36623 /* NonEmpty */; };
+		DFEE088B2DB7048200A36623 /* Tagged in Frameworks */ = {isa = PBXBuildFile; productRef = DFEE088A2DB7048200A36623 /* Tagged */; };
+		DFEE088D2DB7048200A36623 /* TaggedMoney in Frameworks */ = {isa = PBXBuildFile; productRef = DFEE088C2DB7048200A36623 /* TaggedMoney */; };
+		DFEE088F2DB7048200A36623 /* TaggedTime in Frameworks */ = {isa = PBXBuildFile; productRef = DFEE088E2DB7048200A36623 /* TaggedTime */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		DF55C68B2DB6BDAC0089AF0A /* SkillsEnhancement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkillsEnhancement.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +31,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFEE088B2DB7048200A36623 /* Tagged in Frameworks */,
+				DFEE08882DB7045B00A36623 /* NonEmpty in Frameworks */,
+				DFEE08852DB7043A00A36623 /* ComposableArchitecture in Frameworks */,
+				DFEE088F2DB7048200A36623 /* TaggedTime in Frameworks */,
+				DFEE088D2DB7048200A36623 /* TaggedMoney in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +78,11 @@
 			);
 			name = SkillsEnhancement;
 			packageProductDependencies = (
+				DFEE08842DB7043A00A36623 /* ComposableArchitecture */,
+				DFEE08872DB7045B00A36623 /* NonEmpty */,
+				DFEE088A2DB7048200A36623 /* Tagged */,
+				DFEE088C2DB7048200A36623 /* TaggedMoney */,
+				DFEE088E2DB7048200A36623 /* TaggedTime */,
 			);
 			productName = SkillsEnhancement;
 			productReference = DF55C68B2DB6BDAC0089AF0A /* SkillsEnhancement.app */;
@@ -94,6 +112,11 @@
 			);
 			mainGroup = DF55C6822DB6BDAC0089AF0A;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				DFEE08832DB7043A00A36623 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				DFEE08862DB7045B00A36623 /* XCRemoteSwiftPackageReference "swift-nonempty" */,
+				DFEE08892DB7048200A36623 /* XCRemoteSwiftPackageReference "swift-tagged" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = DF55C68C2DB6BDAC0089AF0A /* Products */;
 			projectDirPath = "";
@@ -256,8 +279,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -265,9 +289,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = AlexN0Y.SkillsEnhancement;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -283,8 +311,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -292,9 +321,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = AlexN0Y.SkillsEnhancement;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -320,6 +353,61 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DFEE08832DB7043A00A36623 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.19.1;
+			};
+		};
+		DFEE08862DB7045B00A36623 /* XCRemoteSwiftPackageReference "swift-nonempty" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-nonempty.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.0;
+			};
+		};
+		DFEE08892DB7048200A36623 /* XCRemoteSwiftPackageReference "swift-tagged" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-tagged";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.10.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DFEE08842DB7043A00A36623 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DFEE08832DB7043A00A36623 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+		DFEE08872DB7045B00A36623 /* NonEmpty */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DFEE08862DB7045B00A36623 /* XCRemoteSwiftPackageReference "swift-nonempty" */;
+			productName = NonEmpty;
+		};
+		DFEE088A2DB7048200A36623 /* Tagged */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DFEE08892DB7048200A36623 /* XCRemoteSwiftPackageReference "swift-tagged" */;
+			productName = Tagged;
+		};
+		DFEE088C2DB7048200A36623 /* TaggedMoney */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DFEE08892DB7048200A36623 /* XCRemoteSwiftPackageReference "swift-tagged" */;
+			productName = TaggedMoney;
+		};
+		DFEE088E2DB7048200A36623 /* TaggedTime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DFEE08892DB7048200A36623 /* XCRemoteSwiftPackageReference "swift-tagged" */;
+			productName = TaggedTime;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DF55C6832DB6BDAC0089AF0A /* Project object */;
 }
