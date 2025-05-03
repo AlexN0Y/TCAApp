@@ -11,13 +11,13 @@ import ComposableArchitecture
 @main
 struct SkillsEnhancementApp: App {
     
-    let store = Store(initialState: ContentFeature.State()) {
-        ContentFeature()
+    let store = Store(initialState: AppFeature.State()) {
+        AppFeature()
     }
     
     var body: some Scene {
         WindowGroup {
-            ContentView(store: store)
+            AppRootView(store: store)
         }
     }
 }

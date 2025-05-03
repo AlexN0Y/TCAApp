@@ -81,3 +81,10 @@ struct CharacterResult: Decodable, Equatable, Identifiable {
     let gender: NonEmptyString
     let image: URL
 }
+
+enum APIError: Error, Equatable {
+  case network(String)
+  case decoding(String)
+  case unknown
+
+}
